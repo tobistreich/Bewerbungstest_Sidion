@@ -1,0 +1,279 @@
+[
+    {
+        "id": 1,
+        "img": "https://marvel-b1-cdn.bc0a.com/f00000000026007/resilienteducator.com/wp-content/uploads/2012/11/AdobeStock_60467600_cup.jpg",
+        "name": "Math",
+        "questions": [
+            {
+                "id": 1,
+                "text": "Was bedeutet Fraktion in der Politik?",
+                "options": [
+                    {
+                        "id": 1,
+                        "label": "A",
+                        "text": "Zusammenschluss von Abgeordneten",
+                        "isCorrect": true
+                    },
+                    {
+                        "id": 2,
+                        "label": "B",
+                        "text": "Eine andere Bezeichnung für Regierung",
+                        "isCorrect": false
+                    },
+                    {
+                        "id": 3,
+                        "label": "C",
+                        "text": "Eine andere Bezeichnung für Opposition",
+                        "isCorrect": false
+                    },
+                    {
+                        "id": 4,
+                        "label": "D",
+                        "text": "Die Mehrheit im Bundestag",
+                        "isCorrect": false
+                    }
+                ]
+            },
+            {
+                "id": 2,
+                "text": "Welches Bundesamt steht hinter dem Kürzel BfV?",
+                "options": [
+                    {
+                        "id": 1,
+                        "label": "A",
+                        "text": "Bundesamt für Vereinigungsbedingte Aufgaben",
+                        "isCorrect": false
+                    },
+                    {
+                        "id": 2,
+                        "label": "B",
+                        "text": "Bundesamt für Verbraucherschutz",
+                        "isCorrect": false
+                    },
+                    {
+                        "id": 3,
+                        "label": "C",
+                        "text": "Bundesamt für Verfassungsschutz",
+                        "isCorrect": true
+                    },
+                    {
+                        "id": 4,
+                        "label": "D",
+                        "text": "Bundesamt für Verkehr",
+                        "isCorrect": false
+                    }
+                ]
+            },
+            {
+                "id": 9,
+                "text": "Was bedeutet die Abkürzung HTML",
+                "options": [
+                    {
+                        "id": 1,
+                        "label": "A",
+                        "text": "Hype Transmission Language",
+                        "isCorrect": false
+                    },
+                    {
+                        "id": 2,
+                        "label": "B",
+                        "text": "Hypertext Markup Language",
+                        "isCorrect": true
+                    },
+                    {
+                        "id": 3,
+                        "label": "C",
+                        "text": "Hightemp Makro Language",
+                        "isCorrect": false
+                    },
+                    {
+                        "id": 4,
+                        "label": "D",
+                        "text": "Highest Text Mental Language",
+                        "isCorrect": false
+                    }
+                ]
+            },
+            {
+                "id": 9.3,
+                "text": "Ein Programm zum Anschauen von Websiten nennt man ...",
+                "options": [
+                    {
+                        "id": 1,
+                        "label": "A",
+                        "text": "Browser",
+                        "isCorrect": true
+                    },
+                    {
+                        "id": 2,
+                        "label": "B",
+                        "text": "Webfinder",
+                        "isCorrect": false
+                    },
+                    {
+                        "id": 3,
+                        "label": "C",
+                        "text": "Searcher",
+                        "isCorrect": false
+                    },
+                    {
+                        "id": 4,
+                        "label": "D",
+                        "text": "Outlook",
+                        "isCorrect": false
+                    }
+                ]
+            },
+            {
+                "id": 9.4,
+                "text": "Welche der folgenden Aussagen trifft auf die aufgeführte Bandbreitengrafik zu? Die Netzwerkkarte ist ...",
+                "options": [
+                    {
+                        "id": 1,
+                        "label": "A",
+                        "text": "... nie zu mehr als 30% ausgelastet",
+                        "isCorrect": false
+                    },
+                    {
+                        "id": 2,
+                        "label": "B",
+                        "text": "... maximal zu 90% ausgelastet",
+                        "isCorrect": false
+                    },
+                    {
+                        "id": 3,
+                        "label": "C",
+                        "text": "... immer zu mehr als 50% ausgelastet",
+                        "isCorrect": false
+                    },
+                    {
+                        "id": 4,
+                        "label": "D",
+                        "text": "... immer zu mehr als 10% ausgelastet",
+                        "isCorrect": true
+                    }
+                ]
+            },
+            {
+                "id": 9.5,
+                "text": "Wie nennt man den Arbeitsspeicher eines Computers?",
+                "options": [
+                    {
+                        "id": 1,
+                        "label": "A",
+                        "text": "Festspeicher",
+                        "isCorrect": false
+                    },
+                    {
+                        "id": 2,
+                        "label": "B",
+                        "text": "ROM (Read Only Memory)",
+                        "isCorrect": false
+                    },
+                    {
+                        "id": 3,
+                        "label": "C",
+                        "text": "RAM (Random Access Memory)",
+                        "isCorrect": true
+                    },
+                    {
+                        "id": 4,
+                        "label": "D",
+                        "text": "Lesespeicher",
+                        "isCorrect": false
+                    }
+                ]
+            },
+            {
+                "id": 9.6,
+                "text": "Was versteht man unter SQL?",
+                "options": [
+                    {
+                        "id": 1,
+                        "label": "A",
+                        "text": "Eine Datenbanksprache",
+                        "isCorrect": true
+                    },
+                    {
+                        "id": 2,
+                        "label": "B",
+                        "text": "Eine Bildbearbeitungssoftware",
+                        "isCorrect": false
+                    },
+                    {
+                        "id": 3,
+                        "label": "C",
+                        "text": "Ein Textverarbeitungsprogramm",
+                        "isCorrect": false
+                    },
+                    {
+                        "id": 4,
+                        "label": "D",
+                        "text": "Eine Tabellenkalkulationssoftware",
+                        "isCorrect": false
+                    }
+                ]
+            },
+            {
+                "id": 9,
+                "text": "Welche Werte stehen in den Variablen i und s nach Ausführung des geschriebenen Programms?",
+                "options": [
+                    {
+                        "id": 1,
+                        "label": "A",
+                        "text": "In i steht 100, in s steht 100",
+                        "isCorrect": false
+                    },
+                    {
+                        "id": 2,
+                        "label": "B",
+                        "text": "In i steht 101, in s steht 101",
+                        "isCorrect": false
+                    },
+                    {
+                        "id": 3,
+                        "label": "C",
+                        "text": "In i steht 100, in s steht 4950",
+                        "isCorrect": true
+                    },
+                    {
+                        "id": 4,
+                        "label": "D",
+                        "text": "In i steht 101, in s steht 4950",
+                        "isCorrect": false
+                    }
+                ]
+            },
+            {
+                "id": 8,
+                "text": "In dieser Aufgabe siehst du Figurenreihen, die aus drei Abbildungen bestehen. Wähle nun aus den vier Fortsetzungsmöglichkeiten die richtige aus.",
+                "options": [
+                    {
+                        "id": 1,
+                        "label": "A",
+                        "text": "A",
+                        "isCorrect": true
+                    },
+                    {
+                        "id": 2,
+                        "label": "B",
+                        "text": "B",
+                        "isCorrect": false
+                    },
+                    {
+                        "id": 3,
+                        "label": "C",
+                        "text": "C",
+                        "isCorrect": false
+                    },
+                    {
+                        "id": 4,
+                        "label": "D",
+                        "text": "D",
+                        "isCorrect": false
+                    }
+                ]
+            }
+        ]
+    }
+]

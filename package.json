@@ -1,5 +1,5 @@
 {
-  "name": "bewerbungstest",
+  "name": "quizapp",
   "version": "0.0.0",
   "private": true,
   "type": "module",
@@ -9,10 +9,11 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "vue": "^3.3.11"
+    "gsap": "^3.12.4",
+    "vue": "^3.3.10"
   },
   "devDependencies": {
-    "@vitejs/plugin-vue": "^4.5.2",
-    "vite": "^5.0.10"
+    "@vitejs/plugin-vue": "^4.5.1",
+    "vite": "^5.0.11"
   }
 }
