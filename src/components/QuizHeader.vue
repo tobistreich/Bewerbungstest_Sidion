@@ -19,7 +19,7 @@
 
 <style scoped>
     header {
-        margin-top: 20px;
+        margin: 20px;
     }
 
     header h4 {

@@ -6,9 +6,7 @@
     import questions from "../data/questions.json"
     import Result from "../components/Result.vue"
     
-    const route = useRoute()
-    const quizId = parseInt(route.params.id)
-    const quiz = questions.find(q => q.id === quizId)
+    const quiz = questions.find(q => q.id === 1)
     const currentQuestionIndex = ref(0)
     const numberOfCorrectAnswers = ref(0)
     const showResult = ref(false)
@@ -34,7 +32,7 @@
         <QuizHeader
             :questionStatus="questionStatus"
             :barPercentage="barPercentage"
-            id="QuizHeader"
+            id="quiz-header"
         />
         <div>
             <Question 
@@ -53,9 +51,9 @@
 </template>
 
 <style>
-#QuizHeader {
+#quiz-header {
+    display: flex;
+    flex-direction: column;
     margin: 2rem auto;
-    display: flexbox;
-    justify-content: center;
 }
 </style>
