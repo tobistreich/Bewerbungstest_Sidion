@@ -1,5 +1,6 @@
 <script setup>
-    import Question from "../components/Question.vue"
+    import MultipleChoice from "../components/MultipleChoice.vue"
+    import FreeText from "@/components/FreeText.vue"
     import QuizHeader from "../components/QuizHeader.vue"
     import {useRoute} from "vue-router"
     import {ref, watch, computed} from "vue"
@@ -25,6 +26,24 @@
 
         currentQuestionIndex.value++
     }
+    const onSubmitFreetext = (userAnswer) => {
+        const correctAnswer = quiz.questions[currentQuestionIndex.value].optimalAnswer
+        console.log(correctAnswer)
+        console.log(userAnswer)
+        if(userAnswer == correctAnswer) {
+            numberOfCorrectAnswers.value++
+        }
+
+        if(quiz.questions.length -1 === currentQuestionIndex.value){
+            showResult.value = true
+        }
+
+        currentQuestionIndex.value++
+    }
+
+    const baseCondition = () => {
+        return (currentQuestionIndex.value < quiz.questions.length) && !showResult.value
+    }
 </script>
 
 <template>
@@ -35,10 +54,15 @@
             id="quiz-header"
         />
         <div>
-            <Question 
-                v-if="!showResult"
+            <MultipleChoice 
+                v-if="baseCondition() && quiz.questions[currentQuestionIndex].type === 'multipleChoice'"
                 :question="quiz.questions[currentQuestionIndex]"
                 @selectOption="onOptionSelected"
+            />
+            <FreeText 
+                v-else-if="baseCondition() && quiz.questions[currentQuestionIndex].type === 'freeText'"
+                :question="quiz.questions[currentQuestionIndex]"
+                @submit="onSubmitFreetext"
             />
             <Result
                 v-else
