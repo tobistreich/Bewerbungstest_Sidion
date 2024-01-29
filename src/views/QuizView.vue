@@ -1,6 +1,7 @@
 <script setup>
     import MultipleChoice from "../components/MultipleChoice.vue"
     import FreeText from "@/components/FreeText.vue"
+    import MultipleQuestionsMultipleAnswers from "@/components/MultipleQuestionsMultipleAnswers.vue"
     import QuizHeader from "../components/QuizHeader.vue"
     import {useRoute} from "vue-router"
     import {ref, watch, computed} from "vue"
@@ -28,14 +29,29 @@
     }
     const onSubmitFreetext = (userAnswer) => {
         const correctAnswer = quiz.questions[currentQuestionIndex.value].optimalAnswer
-        console.log(correctAnswer)
-        console.log(userAnswer)
         if(userAnswer == correctAnswer) {
             numberOfCorrectAnswers.value++
         }
 
         if(quiz.questions.length -1 === currentQuestionIndex.value){
             showResult.value = true
+        }
+
+        currentQuestionIndex.value++
+    }
+    const onSubmitMultipleQuestionsMultipleAnswers = (userAnswer) => {
+        const expectedNumberOfAnswers = quiz.questions[currentQuestionIndex.value].options.length
+        let numberOfCorrectFields = 0
+
+        for(let i = 0; i < userAnswer.length; i++) {
+            console.log(userAnswer[i])
+            if(userAnswer[i] == quiz.questions[currentQuestionIndex.value].options[i].answer) {
+                numberOfCorrectFields++
+            }
+        }
+
+        if(numberOfCorrectFields == expectedNumberOfAnswers) {
+            numberOfCorrectAnswers.value++
         }
 
         currentQuestionIndex.value++
@@ -63,6 +79,11 @@
                 v-else-if="baseCondition() && quiz.questions[currentQuestionIndex].type === 'freeText'"
                 :question="quiz.questions[currentQuestionIndex]"
                 @submit="onSubmitFreetext"
+            />
+            <MultipleQuestionsMultipleAnswers
+                v-else-if="baseCondition() && quiz.questions[currentQuestionIndex].type === 'multipleQuestionsMultipleAnswers'"
+                :question="quiz.questions[currentQuestionIndex]"
+                @submit="onSubmitMultipleQuestionsMultipleAnswers"
             />
             <Result
                 v-else

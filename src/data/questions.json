@@ -43,32 +43,28 @@
             },
             {
                 "id": 9,
-                "type": "multipleChoice",
-                "text": "Was bedeutet die Abkürzung HTML",
+                "type": "multipleQuestionsMultipleAnswers",
+                "text": "Prozentrechnung",
                 "options": [
                     {
                         "id": 1,
-                        "label": "A",
-                        "text": "Hype Transmission Language",
-                        "isCorrect": false
+                        "text": "Wie viel sind 15% von 200€",
+                        "answer": "30€"
                     },
                     {
                         "id": 2,
-                        "label": "B",
-                        "text": "Hypertext Markup Language",
-                        "isCorrect": true
+                        "text": "Wie viel sind 15% von 1500€",
+                        "answer": "225€"
                     },
                     {
                         "id": 3,
-                        "label": "C",
-                        "text": "Hightemp Makro Language",
-                        "isCorrect": false
+                        "text": "Wie viel sind 18% von 18000€",
+                        "answer": "3240€"
                     },
                     {
                         "id": 4,
-                        "label": "D",
-                        "text": "Highest Text Mental Language",
-                        "isCorrect": false
+                        "text": "Von 60 Testaufgaben haben Sie 42 richtig, wie viel Prozent sind das?",
+                        "answer": "70%"
                     }
                 ]
             }
